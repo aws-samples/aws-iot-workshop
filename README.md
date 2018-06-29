@@ -1,5 +1,4 @@
 # AWS Internet of Things Workshop
-<div style="text-align: right"> (by Rudy Chetty) </div>
 
 ## Table of Contents
 [Introduction](https://github.com/aws-samples/aws-iot-workshop#introduction)  
