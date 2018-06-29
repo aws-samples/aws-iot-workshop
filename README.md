@@ -11,7 +11,7 @@
 [Conclusion](https://github.com/aws-samples/aws-iot-workshop#conclusion)  
 [References](https://github.com/aws-samples/aws-iot-workshop#references)  
 
-## Introduction
+## Introduction  
 
 Hey there inquisitive mind! I heard you're interested in the wondrous Internet of Things (IoT). That's great news cause you're about to get some hands-on experience with IoT using Amazon Web Services. I mean that's pretty cool and all but guess what's gonna make it even better? Well, you'll be using an actual honest-to-goodness physical IoT micro-controller board! Damn, I wish I was you. Getting all ready to dive head first into this exciting and dynamic field. But before I digress too much...let's get this party started.
 
