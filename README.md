@@ -28,8 +28,10 @@ https://www.amazon.com/AmazonBasics-Male-Micro-Cable-Black/dp/B0711PVX6Z/ref=sr_
 ## Workshop Architecture
 
 <p align="center"> 
-<img src="images/arch.png" style="width: 80%;">
+<img src="images/arch.png" width="80%">
+
 </p>
+
 
 ## Lab 0: This environment doesn't seem that hostile
 
