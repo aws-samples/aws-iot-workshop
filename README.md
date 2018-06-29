@@ -1465,8 +1465,7 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html
 AWS IoT Rules:
 https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html
 
-Arduino IDE:  
-https://www.arduino.cc/en/Main/Software
+Arduino IDE: https://www.arduino.cc/en/Main/Software
 
 Arduino Reference:
 https://www.arduino.cc/reference/en/
