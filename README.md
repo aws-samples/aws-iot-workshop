@@ -2,15 +2,15 @@
 <div style="text-align: right"> (by Rudy Chetty) </div>
 
 ## Table of Contents
-[Introduction](#introduction)  
-[Pre-requisites](#pre-requisites)  
-[Workshop Architecture](#workshop-architecture)  
-[Lab 0 - Environment setup](#lab-0-this-environment-doesn't-seem-that-hostile)  
-[Lab 1 - Get the LED to blink](#lab-1-i-think-your-blinker-is-on)  
-[Lab 2 - Connecting to the AWS IoT Core](#lab-2-shadow-dancer)   
-[Lab 3 - SMS/Email Temperature Button](#lab-3-some-like-it-hot)  
-[Conclusion](#conclusion)  
-[References](#references)  
+[Introduction](https://github.com/aws-samples/aws-iot-workshop#introduction)  
+[Pre-requisites](https://github.com/aws-samples/aws-iot-workshop#pre-requisites)  
+[Workshop Architecture](https://github.com/aws-samples/aws-iot-workshop#workshop-architecture)  
+[Lab 0 - Environment setup](https://github.com/aws-samples/aws-iot-workshop#lab-0-this-environment-doesnt-seem-that-hostile)  
+[Lab 1 - Get the LED to blink](https://github.com/aws-samples/aws-iot-workshop#lab-1-i-think-your-blinker-is-on)  
+[Lab 2 - Connecting to the AWS IoT Core](https://github.com/aws-samples/aws-iot-workshop#lab-2-shadow-dancer)   
+[Lab 3 - SMS/Email Temperature Button](https://github.com/aws-samples/aws-iot-workshop#lab-3-some-like-it-hot)  
+[Conclusion](https://github.com/aws-samples/aws-iot-workshop#conclusion)  
+[References](https://github.com/aws-samples/aws-iot-workshop#references)  
 
 ## Introduction
 
@@ -28,7 +28,7 @@ https://www.amazon.com/AmazonBasics-Male-Micro-Cable-Black/dp/B0711PVX6Z/ref=sr_
 ## Workshop Architecture
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/arch.png" style="width: 80%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/arch.png" style="width: 80%;">
 </p>
 
 ## Lab 0: This environment doesn't seem that hostile
@@ -49,7 +49,7 @@ Download the software package from https://www.arduino.cc/download_handler.php?f
 Unzip arduino-1.8.5-macosx.zip which will extract a file called Arduino.app. 
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/ar_zip.png" style="width: 13%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/ar_zip.png" style="width: 13%;">
 </p>
 
 >**Note**: A .app file which is actually a specially encoded Unix directory. This serves as an application bundle and contains all the necessary Apple-specific files which encompass a runnable application.
@@ -57,14 +57,14 @@ Unzip arduino-1.8.5-macosx.zip which will extract a file called Arduino.app.
 Double-click the .app file to start the IDE.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/app.png" style="width: 13%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/app.png" style="width: 13%;">
 </p>
 
 ### Step 3: 
 Navigate to **Tools -> Board**. As you can see, all the standard Arduino boards are listed for selection such as Uno, Nano, Mega, etc. 
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/ard_std.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/ard_std.png" style="width: 55%;">
 </p>
 
 The ESP32 is a non-standard board thus we need to install a 3rd-party library for it work. This can be done in an automatic or manual fashion. In this case, we will opt for a semi-automatic installation by cloning a Github repository into an Arduino-specific folder.
@@ -72,7 +72,7 @@ The ESP32 is a non-standard board thus we need to install a 3rd-party library fo
 Open a bash shell by pressing **"Command + Space"** and then typing "**terminal**". Press "Enter". 
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/driver6.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/driver6.png" style="width: 55%;">
 </p>
 
 Paste the following and execute it in your terminal: 
@@ -90,20 +90,20 @@ python get.py
 The output should look as follows.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/lib1.png" style="width: 65%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/lib1.png" style="width: 65%;">
 </p>
 
 Restart your IDE then navigate back to **"Tools -> Board"**, you'll now see the ESP32 board listed.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/esp32.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/esp32.png" style="width: 55%;">
 </p>
 
 ### Step 4: 
 Navigate to **"Sketch -> Include Library"**. You'll see that the standard Arduino libraries are available for inclusion.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/libraries.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/libraries.png" style="width: 55%;">
 </p>
 
 We'll be utilising a custom Arduino ESP32 library to connect to AWS IoT. This uses the AWS Embedded-C SDK and wraps the relevant IoT functions.
@@ -124,13 +124,13 @@ rm -rf ~/Documents/Arduino/tempDir
 The output should look as follows.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/lib1.png" style="width: 65%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/lib1.png" style="width: 65%;">
 </p>
 
 Restart your IDE then go back to **"Sketch -> Include Library"**, you'll see that the AWS IOT library appears now.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/awsiot.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/awsiot.png" style="width: 55%;">
 </p>
 
 Close your IDE.
@@ -141,37 +141,37 @@ Before we plug your ESP32 device board in, we need to install drivers so that yo
 Download this file: https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip and extract it.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/driver2.png" style="width: 13%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/driver2.png" style="width: 13%;">
 </p>
 
 Double-click the extracted dmg file and follow the prompts to mount the drivers image
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/driver2.1.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/driver2.1.png" style="width: 55%;">
 </p>
 
 Once the image is mounted, double-click the .pkg file.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/driver3.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/driver3.png" style="width: 55%;">
 </p>
 
 Click "Continue" and follow the rest of the prompts to install the drivers.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/driver4.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/driver4.png" style="width: 55%;">
 </p>
 
 Once the drivers have been installed, open a bash shell by pressing **"Command + Space"** and then typing "**terminal**". Press "Enter". 
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/driver6.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/driver6.png" style="width: 55%;">
 </p>
 
 Plug your ESP32 board into a USB port and then type **"ls /dev/tty.*"**. Press "Enter".
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/driver5.png" style="width: 65%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/driver5.png" style="width: 65%;">
 </p>
 
 As you can see, the ESP32 device is now configured and picked up by your OS as **"/dev/tty.SLAB_USBtoUART"**.
@@ -189,13 +189,13 @@ Upload Speed: **"921600"**
 Core Debug Level: **"None"**
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/esp32 board info.png" style="width: 35%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/esp32 board info.png" style="width: 35%;">
 </p>
 
 For Port, select the one related to the previous step - **"SLAB_USBtoUART"**
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/board2.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/board2.png" style="width: 55%;">
 </p>
 
 Lastly, we'll utilise the built-in Serial Monitor to view/debug output of print statements such as **Serial.printf()**.
@@ -203,7 +203,7 @@ Lastly, we'll utilise the built-in Serial Monitor to view/debug output of print 
 Navigate to **"Tools -> Serial Monitor"**
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/serial0.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/serial0.png" style="width: 55%;">
 </p>
 
 Change the baud rate to **115200**
@@ -211,7 +211,7 @@ Change the baud rate to **115200**
 >**Note:** There is no notification once you change the rate so proceed accordingly.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/serial.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/serial.png" style="width: 55%;">
 </p>
 
 You're now ready to start using your ESP32 device!
@@ -230,7 +230,7 @@ Once installation is complete, start the IDE.
 Navigate to **"Tools -> Board"**. As you can see, all the standard Arduino boards are listed for selection such as Uno, Nano, Mega, etc. 
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/win2.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/win2.png" style="width: 55%;">
 </p>
 
 The ESP32 is a non-standard board and thus we need to install a 3rd-party library for it work. This can be done in an automatic or manual fashion. In this case, we will opt for a semi-automatic installation by cloning a Github repository into an Arduino-specific folder.
@@ -242,7 +242,7 @@ Since Windows doesn't come with Git, proceed with installing it from this url: h
 Once installation is complete, click the Start menu and open "Git CMD".
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/win_git0.png" style="width: 35%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/win_git0.png" style="width: 35%;">
 </p>
 
 Paste the following and execute it in the window: 
@@ -254,7 +254,7 @@ C: && mkdir %userprofile%\Documents\Arduino\hardware\espressif && cd %userprofil
 The output should look as follows.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/win_git1.png" style="width: 85%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/win_git1.png" style="width: 85%;">
 </p>
 
 Click the Start menu, type ""**CMD**" and press enter to open a regular Command Prompt.
@@ -268,20 +268,20 @@ C: && cd %userprofile%\Documents\Arduino\hardware\espressif\esp32\tools\ && get.
 The output should look as follows.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/win_git3.png" style="width: 65%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/win_git3.png" style="width: 65%;">
 </p>
 
 Restart your IDE then navigate back to **"Tools -> Board"**, you'll now see the ESP32 board listed.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/win3.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/win3.png" style="width: 55%;">
 </p>
 
 ### Step 3: 
 Navigate to **"Sketch -> Include Library"**. You'll see that the standard Arduino libraries are available for inclusion.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/win4.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/win4.png" style="width: 55%;">
 </p>
 
 We'll be utilising a custom Arduino ESP32 library to connect to AWS IoT. This library itself makes use of the AWS Embedded-C SDK and wraps the IoT functions.
@@ -289,7 +289,7 @@ We'll be utilising a custom Arduino ESP32 library to connect to AWS IoT. This li
 Click the Start menu and open "Git CMD".
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/win_git00.png" style="width: 45%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/win_git00.png" style="width: 45%;">
 </p>
 
 Paste the following and execute it in the Git CMD window: 
@@ -301,13 +301,13 @@ C: && mkdir %userprofile%\Documents\Arduino\tempDir && cd %userprofile%\Document
 The output should look as follows.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/win_git2.png" style="width: 85%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/win_git2.png" style="width: 85%;">
 </p>
 
 Restart your IDE then go back to **"Sketch -> Include Library"**, you'll see that the AWS IOT library appears now.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/win5.png" style="width: 45%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/win5.png" style="width: 45%;">
 </p>
 
 Close your IDE.
@@ -336,7 +336,7 @@ Upload Speed: **"921600"**
 Core Debug Level: **"None"**
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/port0.png" style="width: 35%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/port0.png" style="width: 35%;">
 </p>
 
 Click the Start menu, type "**Device Manager**" and press Enter.
@@ -344,13 +344,13 @@ Click the Start menu, type "**Device Manager**" and press Enter.
 Scroll down to Ports and expand the dropdown. Make a note of the COM port associated with Silicon labs.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/win_git4.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/win_git4.png" style="width: 55%;">
 </p>
 
 In your Arduino IDE, select the matching COM Port.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/port1.png" style="width: 35%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/port1.png" style="width: 35%;">
 </p>
 
 Lastly, we'll utilise the built-in Serial Monitor to view/debug output of print statements such as **Serial.printf()**.
@@ -358,7 +358,7 @@ Lastly, we'll utilise the built-in Serial Monitor to view/debug output of print 
 Navigate to **"Tools -> Serial Monitor"**
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/win8.png" style="width: 35%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/win8.png" style="width: 35%;">
 </p>
 
 Change the baud rate to **115200**.
@@ -366,7 +366,7 @@ Change the baud rate to **115200**.
 >**Note:** There is no notification once you change the rate so proceed accordingly.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/win9.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/win9.png" style="width: 55%;">
 </p>
 
 You're now ready to start using your ESP32 device!
@@ -383,7 +383,7 @@ You're now ready to start using your ESP32 device!
 ### Architecture for this lab
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/arch1.png" style="width: 80%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/arch1.png" style="width: 80%;">
 </p>
 
 In this lab we're gonna start small and get that fancy pants built-in blue LED to turn on and off every 5 seconds. Kinda like the blinker in your car except you'll actually use it!  
@@ -461,19 +461,19 @@ This tells the code to do a write to the pin (ledPin) with value of LOW. This wi
 Before we execute our code, it needs to be checked for any errors like using the wrong syntax or function. To do this it needs to be compiled so click **"Sketch -> Verify/Compile"** or press **"Command + R"** (macOS) ||| **Ctrl + R"** (Windows). 
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/compile.png" style="width: 35%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/compile.png" style="width: 35%;">
 </p>
 
 This will start compilation which you can see near the bottom of your window along the status bar.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/compiling.png" style="width: 75%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/compiling.png" style="width: 75%;">
 </p>
 
 Once our code is compiled you should see **"Done compiling"** show up in the status bar as follows:
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/compiling2.png" style="width: 35%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/compiling2.png" style="width: 35%;">
 </p>
 
 ### Step 3:
@@ -481,19 +481,19 @@ Once our code is compiled you should see **"Done compiling"** show up in the sta
 The next part is uploading the code to the device. We will essentially flash or overwrite the device's current firmware with your code. Click **"Sketch -> Upload"** or press **"Command + U"** (macOS) ||| **Ctrl + U"** (Windows). 
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/upload.png" style="width: 35%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/upload.png" style="width: 35%;">
 </p>
 
 This will start uploading and update your status bar accordingly.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/uploading.png" style="width: 25%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/uploading.png" style="width: 25%;">
 </p>
 
 Once our code is uploaded you should see **"Done uploading"** in the status bar. 
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/uploaded.png" style="width: 25%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/uploaded.png" style="width: 25%;">
 </p>
 
 Your device will then reset and you should see the LED start to alternates between on and off every 5 seconds.
@@ -501,13 +501,13 @@ Your device will then reset and you should see the LED start to alternates betwe
 Blue LED - ON
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/on.jpeg" style="width: 35%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/on.jpeg" style="width: 35%;">
 </p>
 
 Blue LED - OFF
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/off.jpeg" style="width: 35%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/off.jpeg" style="width: 35%;">
 </p>
 
 ### Step 4:
@@ -563,7 +563,7 @@ This outputs **"OFF"** to the serial port.
 Compile and upload your code by pressing **"Command + U"** (macOS) ||| **Ctrl + U"** (Windows). . Once your device has restarted open up the Serial Monitor by pressing **"Command + SHIFT + M""** (macOS) ||| **Ctrl + SHIFT + M"** (Windows). You should now see the output of both println() statements as the LED turns on and off.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/offonserial.png" style="width: 35%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/offonserial.png" style="width: 35%;">
 </p>
 
 You've now completed your first Arduino Sketch. Feel free to change the timing to make it blink faster or slower. Once you're done, move onto the next lab, slugger.
@@ -580,7 +580,7 @@ You've now completed your first Arduino Sketch. Feel free to change the timing t
 ### Architecture for this lab
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/arch2.png" style="width: 80%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/arch2.png" style="width: 80%;">
 </p>
 
 In this lab, we're gonna connect our ESP32 device to the AWS IoT Core as a "thing" and then update it's thing shadow.
@@ -596,25 +596,25 @@ For our ESP32 device to access AWS Services (once in the AWS Cloud) it needs to 
 Log into your AWS account and search for "IoT" under **AWS services**. You can then click the applicable result for **AWS IoT**.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/iot1.png" style="width: 35%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/iot1.png" style="width: 35%;">
 </p>
 
 Make sure you are in a region which supports AWS IoT like Ohio. If you click the dropdown in the top-right corner, you can select the appropriate region.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/region.png" style="width: 35%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/region.png" style="width: 35%;">
 </p>
 
 Navigate to **"Secure -> Policies"** from the left navigation then click on the **"Create"** button.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/policy.png" style="width: 100%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/policy.png" style="width: 100%;">
 </p>
 
 Name the policy **"thingamajig_policy"**.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/policy_name.png" style="width: 35%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/policy_name.png" style="width: 35%;">
 </p>
 
 Scroll down to the **"Add statements"** section and fill in the fields as follows:
@@ -626,7 +626,7 @@ Effect: **Allow** (select the checkbox)
 Once you're done, click **"Create"** to complete policy creation.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/policy_statement.png" style="width: 65%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/policy_statement.png" style="width: 65%;">
 </p>
 
 ### Step 2: Create a thing
@@ -634,13 +634,13 @@ Once you're done, click **"Create"** to complete policy creation.
 Navigate to **"Manage -> Things"** from the left navigation then click on the **"Create"** button.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/iot2.png" style="width: 100%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/iot2.png" style="width: 100%;">
 </p>
 
 Click on the **"Create a single thing"** button.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/iot3.png" style="width: 100%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/iot3.png" style="width: 100%;">
 </p>
 
 Name the device **"Thingamajig"** then scroll down to the bottom and click **"Next"**.
@@ -648,7 +648,7 @@ Name the device **"Thingamajig"** then scroll down to the bottom and click **"Ne
 > **Note:** You can leave the rest of the settings as default.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/iot4.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/iot4.png" style="width: 55%;">
 </p>
 
 We'll be using certificate-based authentication so our device can connect to the AWS IoT Core in a secure manner.
@@ -656,13 +656,13 @@ We'll be using certificate-based authentication so our device can connect to the
 Click **"Create certificate"**
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/iot6.png" style="width: 100%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/iot6.png" style="width: 100%;">
 </p>
 
 Download all four documents (two certificates and two keys) then click the **"Activate"** button.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/iot7.png" style="width: 85%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/iot7.png" style="width: 85%;">
 </p>
 
 >**Note:** The Deactivate button appears once you have activated the certificates.
@@ -670,19 +670,19 @@ Download all four documents (two certificates and two keys) then click the **"Ac
 Next up we'll attach the policy from the previous step. Scroll down to the bottom of the screen and click **"Attach a policy"**. 
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/attach.png" style="width: 40%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/attach.png" style="width: 40%;">
 </p>
 
 Search for the thingamajig policy by scrolling or input **"thingamajig"** into the search box. Once you locate the policy, select the checkbox next to it and click **"Register Thing"**.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/policy_reg.png" style="width: 100%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/policy_reg.png" style="width: 100%;">
 </p>
 
 Once your thing has been created you'll be taken back to the Things page where it will appear accordingly:
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/thing_created.png" style="width: 85%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/thing_created.png" style="width: 85%;">
 </p>
 
 ### Step 3: Deploying the certificates and private key to your device
@@ -695,7 +695,7 @@ macOS: /Users/**your username**/Documents/Arduino/libraries/AWS_IOT/src/
 Windows: 
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/certs_array.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/certs_array.png" style="width: 55%;">
 </p>
 
 We'll insert the file contents from our downloaded documents into the arrays with the following mappings:
@@ -709,7 +709,7 @@ xxxxxxxxxxx-private.pem.key | **private_pem_key** | Private Key
 Open the **Root certificate** with your text editor.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/root_cert.png" style="width: 85%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/root_cert.png" style="width: 85%;">
 </p>
 
 It will look similar to following extract (albeit with more lines):
@@ -745,7 +745,7 @@ hnacRHr2lVz2XTIIM6RUthg/aFzyQkqFOFSDX9HoLPKsEdao7WNq\n\
 We'll repeat the process for the **Thing certificate** so open that up with your text editor.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/cert_cert.png" style="width: 85%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/cert_cert.png" style="width: 85%;">
 </p>
 
 It will look similar to following extract (albeit with more lines):
@@ -780,7 +780,7 @@ mY6oMQITy+QyWsqHxpLcd0HGe75xfJ3XnT+spEywADj6VpemBOXnpu9kDcs4\n\
 Lastly, we'll copy over the **Private key** so open that up with your text editor.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/priv_cert.png" style="width: 85%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/priv_cert.png" style="width: 85%;">
 </p>
 
 It will look similar to following extract (albeit with more lines):
@@ -856,13 +856,13 @@ char WIFI_PASSWORD[]="xxxxxxxx";
 Navigate to **"Manage -> Things"** from the **AWS IoT** left navigation then click on the **"Thingamajig"** thing.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/thing0.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/thing0.png" style="width: 55%;">
 </p>
 
 Click **Interact** from the left navigation and copy the HTTPS URL.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/thing1.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/thing1.png" style="width: 55%;">
 </p>
 
 Update our host address in this section with the copied URL:
@@ -962,19 +962,19 @@ Compile and upload the Sketch to our ESP32 device.
 Navigate to **"Manage -> Things"** from the **AWS IoT** left navigation then click on the **"Thingamajig"** thing.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/thing_created.png" style="width: 85%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/thing_created.png" style="width: 85%;">
 </p>
 
 Click **Shadow** from the left navigation and scroll down to **"Shadow state:"**. You'll see the counter will be updated as our application executes.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/thing3.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/thing3.png" style="width: 55%;">
 </p>
 
 Click **Activity** from the left navigation and you'll see updates that have succeeded or failed as they come through.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/thing4.png" style="width: 85%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/thing4.png" style="width: 85%;">
 </p>
 
 Back in Arduino, navigate to **"Tools -> Serial Monitor"** and you'll see the output of our print statements as well. Woah, that's pretty cool. We've successfully connected our ESP32 device to our AWS IoT Core!
@@ -992,7 +992,7 @@ Back in Arduino, navigate to **"Tools -> Serial Monitor"** and you'll see the ou
 ### Architecture for this lab
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/arch4.png" style="width: 80%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/arch4.png" style="width: 80%;">
 </p>
 
 In this lab,  we're gonna simulate temperature fluctuations on our ESP32 (by pressing the on-board button). An email will be sent out if the temperature is below 25 Celsius. However, if the temperature exceeds 25 Celsius then an SMS warning will be sent out instead.
@@ -1004,25 +1004,25 @@ Log into your AWS account and search for "sns" under **AWS services**. You can t
 >**Note:** Simple Notification Service is used to send email and SMS (Text) messages. You create an SNS Topic then add subscribers who will be notified when a message is added to the subscribed Topic.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/sns.png" style="width: 45%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/sns.png" style="width: 45%;">
 </p>
 
 Click **"Create topic"** under the **Common Actions** section.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/sns1.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/sns1.png" style="width: 55%;">
 </p>
 
 Name the Topic **"thingamajig_topic"** and the Display name **"esp32"**. Once you've done that, click **"Create topic"**.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/sns2.png" style="width: 100%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/sns2.png" style="width: 100%;">
 </p>
 
 After the topic has been created you'll see a screen similar to the following:
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/sns3.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/sns3.png" style="width: 55%;">
 </p>
 
 Make a note of the Topic ARN as you'll need it in **Step 6**.
@@ -1032,43 +1032,43 @@ Make a note of the Topic ARN as you'll need it in **Step 6**.
 Click **"Create subscription"**.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/sns4.png" style="width: 35%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/sns4.png" style="width: 35%;">
 </p>
 
 Select **"Email"** from the Protocol dropdown.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/sns5.png" style="width: 75%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/sns5.png" style="width: 75%;">
 </p>
 
 Enter a valid email address in the **"Email"** field then click **"Create subscription"**.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/sns6.png" style="width: 75%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/sns6.png" style="width: 75%;">
 </p>
 
 You'll see the subscription as **"PendingConfirmation"** which means we need to confirm the email address.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/sns7.png" style="width: 75%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/sns7.png" style="width: 75%;">
 </p>
 
 You should receive a confirmation email in the next few minutes. Once you do, open it up and click the **"Confirm subscription"** link.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/sns8.png" style="width: 85%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/sns8.png" style="width: 85%;">
 </p>
 
 This will confirm that the subscription is valid and you'll see the following page open up in your browser:
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/sns9.png" style="width: 75%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/sns9.png" style="width: 75%;">
 </p>
 
 Go back to your **Topic** and you'll see that the subscription has been populated. This means the subscription has been confirmed successfully. 
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/sns10.png" style="width: 75%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/sns10.png" style="width: 75%;">
 </p>
 
 ### Step 3: Testing our subscription
@@ -1076,7 +1076,7 @@ Go back to your **Topic** and you'll see that the subscription has been populate
 Click **"Publish to topic"**.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/sns11.png" style="width: 35%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/sns11.png" style="width: 35%;">
 </p>
 
 Enter **"test"** as the Subject and something apt for the Message field:
@@ -1091,19 +1091,19 @@ AWS IoT Workshop
 ```
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/sns12.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/sns12.png" style="width: 55%;">
 </p>
 
 Scroll down to the bottom of the screen and click **"Publish message"**
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/sns13.png" style="width: 35%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/sns13.png" style="width: 35%;">
 </p>
 
 You should receive the test email in the next few minutes.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/sns14.png" style="width: 95%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/sns14.png" style="width: 95%;">
 </p>
 
 ### Step 4: Setting up an SNS topic for SMS
@@ -1122,7 +1122,7 @@ Display name: **"sms_topic"**.
 After the topic has been created you'll see a screen similar to the following:
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/sms1.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/sms1.png" style="width: 55%;">
 </p>
 
 Make a note of the Topic ARN as you'll need it in **Step 6**.
@@ -1137,7 +1137,7 @@ Endpoint: ** Your cellphone number **
 After the subscription has been created you'll see it appear under your topic.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/sms2.png" style="width: 75%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/sms2.png" style="width: 75%;">
 </p>
 
 ### Step 6: Create a Lambda Function
@@ -1153,7 +1153,7 @@ Existing role: **lambda_basic_execution**
 >**Note:** Ensure the lambda_basic_execution role has an attached policy that allows access to SNS. This can be done via the IAM UI.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/lambda1.png" style="width: 75%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/lambda1.png" style="width: 75%;">
 </p>
 
 Click "**Create Function**" and then paste the following code into the **Function code** input box.
@@ -1213,13 +1213,13 @@ An IoT Rule is used to route device shadow updates to a specified AWS Service. I
 Log into your AWS account and search for "IoT" under **AWS services**. You can then click the applicable result for **AWS IoT**. Navigate to **Act** and then click the **"Create"** button on the far right.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/rule1.png" style="width: 100%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/rule1.png" style="width: 100%;">
 </p>
 
 Name the rule **"thingamajig_rule"** then scroll down to the **"Message source"** section.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/rule2.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/rule2.png" style="width: 55%;">
 </p>
 
 Enter ** * ** for **"Attribute"** and then input **$aws/things/Thingamajig/shadow/update/accepted** as the **"Topic filter"**. 
@@ -1227,7 +1227,7 @@ Enter ** * ** for **"Attribute"** and then input **$aws/things/Thingamajig/shado
 >**Note:** We are pulling all values from the device shadow (** * ** ) when there has been a successful update (**$aws/things/Thingamajig/shadow/update/accepted**)
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/rule3.png" style="width: 65%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/rule3.png" style="width: 65%;">
 </p>
 
 Scroll down and click **"Add action"**. Select the checkbox for the **Lambda** option and then scroll down and click **"Configure action"**. Select the "**testCross**" Lambda function we created in **Step 6** then scroll down and click **"Add action"**.
@@ -1235,7 +1235,7 @@ Scroll down and click **"Add action"**. Select the checkbox for the **Lambda** o
 You'll be taken back to the **IoT Rules** page and will see that our Rule has been created successfully.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/rule13.png" style="width: 65%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/rule13.png" style="width: 65%;">
 </p>
 
 ### Step 8: Creating the application and testing it
@@ -1414,25 +1414,25 @@ Confirm that the application has connected to AWS by navigating to **"Tools -> S
 Navigate to **"Manage -> Things"** from the **AWS IoT** left navigation then click on the **"Thingamajig"** thing.
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/thing_created.png" style="width: 85%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/thing_created.png" style="width: 85%;">
 </p>
 
 Click **Shadow** from the left navigation and scroll down to **"Shadow state:"**. Once you are ready, press the button on the device to initiate a temperature update to the device shadow. If the temperature reported is <=25 Celsius you will receive an Email otherwise you will receive an SMS (temperature > 25 Celsius)
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/hightemp.png" style="width: 35%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/hightemp.png" style="width: 35%;">
 </p>
 
 The email will look similar to the following:
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/email.png" style="width: 85%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/email.png" style="width: 85%;">
 </p>
 
 And the SMS: 
 
 <p align="center"> 
-<img src="http://internetoftracking.com/git/sms22.png" style="width: 55%;">
+<img src="https://github.com/aws-samples/aws-iot-workshop/sms22.png" style="width: 55%;">
 </p>
 
 ### What did we learn?
@@ -1486,7 +1486,7 @@ https://github.com/nodemcu/nodemcu-firmware/tree/dev-esp32
 
 ESP32 Pin Mappings:
 <p align="center"> <a href="https://github.com/espressif/arduino-esp32#esp32dev-board-pinmap">
-<img src="http://internetoftracking.com/git/ESP32-pins.jpg" style="width: 75%;"></a>
+<img src="https://github.com/aws-samples/aws-iot-workshop/ESP32-pins.jpg" style="width: 75%;"></a>
 </p>
 
 >**Note**: Pin mappings vary depending on the board that is used. More so, each one corresponds to a specific type and must be used with sensors that are compatible. In this case we are referencing an led that is soldered onto the board and which has an addressable pin. Similarly, if we for example, plugged in a sensor to pins 4 and 5 then we could address that sensor using those pins. As another example, pins like 8 and 9 can be used for TX/RX which is what's required to connect a temp/humidity sensor.
