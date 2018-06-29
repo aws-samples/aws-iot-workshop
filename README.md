@@ -5,7 +5,7 @@
 [Pre-requisites](https://github.com/aws-samples/aws-iot-workshop#pre-requisites)  
 [Workshop Architecture](https://github.com/aws-samples/aws-iot-workshop#workshop-architecture)  
 [Lab 0 - Environment setup](https://github.com/aws-samples/aws-iot-workshop#lab-0-this-environment-doesnt-seem-that-hostile)  
-[Lab 1 - Get the LED to blink](https://github.com/aws-samples/aws-iot-workshop#lab-1-i-think-your-blinker-is-on)  
+[Lab 1 - Get the LED to blink](https://github.com/aws-samples/aws-iot-workshop#lab-1--i-think-your-blinker-is-on)  
 [Lab 2 - Connecting to the AWS IoT Core](https://github.com/aws-samples/aws-iot-workshop#lab-2-shadow-dancer)   
 [Lab 3 - SMS/Email Temperature Button](https://github.com/aws-samples/aws-iot-workshop#lab-3-some-like-it-hot)  
 [Conclusion](https://github.com/aws-samples/aws-iot-workshop#conclusion)  
