@@ -1455,6 +1455,9 @@ Well I'm kinda impressed. You completed this workshop and most likely learned qu
 Intro to AWS IoT:
 https://www.aws.training/learningobject/video?id=16505
 
+IoT Building Blocks:
+https://www.youtube.com/watch?v=HEQkVHxu46A
+
 Thing/Device Shadow:
 https://docs.aws.amazon.com/iot/latest/developerguide/iot-thing-shadows.html
 
