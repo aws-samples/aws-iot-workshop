@@ -316,8 +316,6 @@ Close your IDE.
 ### Step 4:
 For Windows to recognise the ESP32 device we need to install applicable drivers. 
 
-Before we plug your ESP32 device board in, we need to install drivers so that your OS knows how to communicate with it. 
-
 Download and install the drivers from this location: https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip
 
 >**Note:** The installation file is usually named CP210xVCPInstaller_x64.exe
