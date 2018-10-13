@@ -225,7 +225,7 @@ Download and install Arduino from https://www.arduino.cc/download_handler.php?f=
 
 Once installation is complete, start the IDE.
 
->**Note:** The installation path for Sketches should default to C:\Users\username\Documents\Arduino where <username> is the username you use to log into your PC
+>**Note:** The installation path for Sketches should default to C:\Users\username\Documents\Arduino where  username is the one you use to log into your PC
 
 ### Step 2: 
 Navigate to **"Tools -> Board"**. As you can see, all the standard Arduino boards are listed for selection such as Uno, Nano, Mega, etc. 
