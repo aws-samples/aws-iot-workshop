@@ -691,7 +691,7 @@ We need to configure the device itself so it can connect to the AWS IoT Core.
 Locate this file under the AWS_IOT library that we installed in the first lab and open it with a Text editor: **aws_iot_certificates.c**. You'll see three arrays which we need to edit.
 
 macOS: **~/Documents/Arduino/libraries/AWS_IOT/src/**  
-Windows: **C:\Users\your username\Documents\Arduino\libraries\AWS_IOT\src where username is your Windows login.
+Windows: **C:\Users\your username\Documents\Arduino\libraries\AWS_IOT\src** where username is your Windows login.
 
 <p align="center"> 
 <img src="images/certs_array.png" width="55%">
