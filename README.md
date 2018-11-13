@@ -1223,7 +1223,7 @@ Name the rule **"thingamajig_rule"** then scroll down to the **"Message source"*
 
 Enter ** * ** for **"Attribute"** and then input **$aws/things/Thingamajig/shadow/update/accepted** as the **"Topic filter"**. 
 
->**Note:** We are pulling all values from the device shadow (** * ** ) when there has been a successful update (**$aws/things/Thingamajig/shadow/update/accepted**)
+>**Note:** We are pulling all values from the device shadow (** * ** ) when there has been a successful update (**$aws/things/Thingamajig/shadow/update/accepted**). As of Nov 2018, you will need to enter the statement directly into the Rule as: SELECT * FROM '$aws/things/Thingamajig/shadow/update/accepted'
 
 <p align="center"> 
 <img src="images/rule3.png" width="65%">
