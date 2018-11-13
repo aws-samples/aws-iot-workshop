@@ -701,7 +701,7 @@ We'll insert the file contents from our downloaded documents into the arrays wit
 
 Filename | Array name | Description
 --- | --- | ---
-VeriSign-Class 3-Public-Primary-Certification-Authority-G5.pem | **aws_root_ca_pem** | Root certificate
+VeriSign-Class 3-Public-Primary-Certification-Authority-G5.pem OR AmazonRootCA1.pem (for new devices Nov 2018) | **aws_root_ca_pem** | Root certificate
 xxxxxxxxxxx-certificate.pem.crt | **certificate_pem_crt** | Thing certificate
 xxxxxxxxxxx-private.pem.key | **private_pem_key** | Private Key
 
