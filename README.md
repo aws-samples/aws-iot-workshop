@@ -618,8 +618,8 @@ Name the policy **"thingamajig_policy"**.
 
 Scroll down to the **"Add statements"** section and fill in the fields as follows:
 
-Action: iot:*
-Resource ARN: *
+Action: iot:*  
+Resource ARN: *  
 Effect: **Allow** (select the checkbox)
 
 Once you're done, click **"Create"** to complete policy creation.
