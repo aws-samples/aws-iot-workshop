@@ -618,8 +618,8 @@ Name the policy **"thingamajig_policy"**.
 
 Scroll down to the **"Add statements"** section and fill in the fields as follows:
 
-Action: ** iot:* **
-Resource ARN: ** * **
+Action: iot:*
+Resource ARN: *
 Effect: **Allow** (select the checkbox)
 
 Once you're done, click **"Create"** to complete policy creation.
@@ -726,9 +726,9 @@ hnacRHr2lVz2XTIIM6RUthg/aFzyQkqFOFSDX9HoLPKsEdao7WNq
 Paste the file contents into the **aws_root_ca_pem** array in the following fashion. Make sure you follow these four rules when doing so:
 
 1. Do not add any extra whitespaces 
-2. End your lines with **\n\ **
-3. End the last line with **\n **
-4. Put the array in quotes ""
+2. End your lines with: \n\
+3. End the last line with: \n
+4. Put the array in quotes: ""
 
 ```c
 const char aws_root_ca_pem[] = {"-----BEGIN CERTIFICATE-----\n\
@@ -739,7 +739,7 @@ hnacRHr2lVz2XTIIM6RUthg/aFzyQkqFOFSDX9HoLPKsEdao7WNq\n\
 
 ```
 
->**Note:** It's imperative that you follow the three rules as many people get caught out by this copy and paste effort.
+>**Note:** It's imperative that you follow the four rules as many people get caught out by this copy and paste effort.
 
 We'll repeat the process for the **Thing certificate** so open that up with your text editor.
 
@@ -759,11 +759,12 @@ mY6oMQITy+QyWsqHxpLcd0HGe75xfJ3XnT+spEywADj6VpemBOXnpu9kDcs4
 -----END CERTIFICATE-----
 ```
 
-Paste the file contents into the **certificate_pem_crt** array in the following fashion. Make sure you follow these three rules when doing so:
+Paste the file contents into the **certificate_pem_crt** array in the following fashion.  Make sure you follow these four rules when doing so:
 
 1. Do not add any extra whitespaces 
-2. End your lines with **\n\ **
-3. End the last line with **\n **
+2. End your lines with: \n\
+3. End the last line with: \n
+4. Put the array in quotes: ""
 
 ```c
 const char certificate_pem_crt[] = {"-----BEGIN CERTIFICATE-----\n\
@@ -774,7 +775,7 @@ mY6oMQITy+QyWsqHxpLcd0HGe75xfJ3XnT+spEywADj6VpemBOXnpu9kDcs4\n\
 
 ```
 
->**Note:** It's imperative that you follow the three rules as many people get caught out by this copy and paste effort.
+>**Note:** It's imperative that you follow the four rules as many people get caught out by this copy and paste effort.
 
 Lastly, we'll copy over the **Private key** so open that up with your text editor.
 
@@ -794,11 +795,12 @@ r1jg7VZIHbQ46Ecejv5TMCbcDJZcPR7B00W333cHLeV62GPSNISn
 -----END RSA PRIVATE KEY-----
 ```
 
-Paste the file contents into the **private_pem_key** array in the following fashion. Make sure you follow these three rules when doing so:
+Paste the file contents into the **private_pem_key** array in the following fashion.  Make sure you follow these four rules when doing so:
 
 1. Do not add any extra whitespaces 
-2. End your lines with **\n\ **
-3. End the last line with **\n**
+2. End your lines with: \n\
+3. End the last line with: \n
+4. Put the array in quotes: ""
 
 ```c
 const char private_pem_key[] = {"-----BEGIN RSA PRIVATE KEY-----\n\
@@ -809,7 +811,7 @@ r1jg7VZIHbQ46Ecejv5TMCbcDJZcPR7B00W333cHLeV62GPSNISn\n\
 
 ```
 
->**Note:** It's imperative that you follow the three rules as many people get caught out by this copy and paste effort.
+>**Note:** It's imperative that you follow the four rules as many people get caught out by this copy and paste effort.
 
 Once you've copied over all of the files, save the **aws_iot_certificate.c** file.
 
@@ -1221,7 +1223,7 @@ Name the rule **"thingamajig_rule"** then scroll down to the **"Message source"*
 <img src="images/rule2.png" width="55%">
 </p>
 
-Enter ** * ** for **"Attribute"** and then input **$aws/things/Thingamajig/shadow/update/accepted** as the **"Topic filter"**. 
+Enter * for **"Attribute"** and then input **$aws/things/Thingamajig/shadow/update/accepted** as the **"Topic filter"**. 
 
 >**Note:** We are pulling all values from the device shadow (** * ** ) when there has been a successful update (**$aws/things/Thingamajig/shadow/update/accepted**). As of Nov 2018, you will need to enter the statement directly into the Rule as: SELECT * FROM '$aws/things/Thingamajig/shadow/update/accepted'
 
