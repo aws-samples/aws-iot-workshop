@@ -177,6 +177,8 @@ Plug your ESP32 board into a USB port and then type **"ls /dev/tty.*"**. Press "
 
 As you can see, the ESP32 device is now configured and picked up by your OS as **"/dev/tty.SLAB_USBtoUART"**.
 
+>**Note:** If you cannot see your device please follow the steps under this link - https://github.com/espressif/arduino-esp32/issues/1084#issuecomment-425542458  
+
 ### Step 6:
 Open up your Arduino IDE and navigate to **"Tools"**. Click **"Board"** and select **"ESP32 Dev Module"**.  
 
@@ -559,7 +561,9 @@ This outputs **"OFF"** to the serial port.
 
 **=====Code Explanation End=====**
 
-Compile and upload your code by pressing **"Command + U"** (macOS) ||| **Ctrl + U"** (Windows). . Once your device has restarted open up the Serial Monitor by pressing **"Command + SHIFT + M""** (macOS) ||| **Ctrl + SHIFT + M"** (Windows). You should now see the output of both println() statements as the LED turns on and off.
+Compile and upload your code by pressing **"Command + U"** (macOS) ||| **Ctrl + U"** (Windows). Once your device has restarted open up the Serial Monitor by pressing **"Command + SHIFT + M""** (macOS) ||| **Ctrl + SHIFT + M"** (Windows). You should now see the output of both println() statements as the LED turns on and off.
+
+>**Note:** If you device seems to be stuck at the connecting part, hold down the button to the right of the USB cable (if you're holding it like a lollipop). This will allow it to be flashed with your code.  
 
 <p align="center"> 
 <img src="images/offonserial.png" width="35%">
@@ -979,6 +983,8 @@ Click **Activity** from the left navigation and you'll see updates that have suc
 </p>
 
 Back in Arduino, navigate to **"Tools -> Serial Monitor"** and you'll see the output of our print statements as well. Woah, that's pretty cool. We've successfully connected our ESP32 device to our AWS IoT Core!
+
+>**Note:** If your device seems to be stuck connecting to Wifi, unplug it and plug it back in. Then try upload your code again. 
 
 ### What did we learn?
 
