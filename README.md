@@ -19,10 +19,8 @@ Hey there inquisitive mind! I heard you're interested in the wondrous Internet o
 1. PC/Mac with Administrator access
 2. Valid AWS Account
 3. Internet access
-4. An ESP32 device board such as:  
-  https://www.amazon.com/gp/product/B0718T232Z/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1  
-5. A micro-USB cable such as:    
-https://www.amazon.com/AmazonBasics-Male-Micro-Cable-Black/dp/B0711PVX6Z/ref=sr_1_5?ie=UTF8&qid=1515622065&sr=8-5&keywords=micro+usb+cable
+4. An ESP32 device board such as [this](https://www.amazon.com/gp/product/B0718T232Z/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1)
+5. A micro-USB cable such as [this](https://www.amazon.com/AmazonBasics-Male-Micro-Cable-Black/dp/B0711PVX6Z/ref=sr_1_5?ie=UTF8&qid=1515622065&sr=8-5&keywords=micro+usb+cable)
 
 ## Workshop Architecture
 
