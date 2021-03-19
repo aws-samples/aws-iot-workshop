@@ -92,7 +92,7 @@ The output should look as follows.
 <img src="images/lib1.png" width="65%">
 </p>
 
->**Troubleshooting:** If you observe `certificate verify failed: unable to get local issuer certificate` failure please review https://stackoverflow.com/a/57795811/7412781 
+>**Troubleshooting:** If you encounter a `certificate verify failed: unable to get local issuer certificate` issue please review https://stackoverflow.com/a/57795811/7412781 
 
 Restart your IDE then navigate back to **"Tools -> Board"**, you'll now see the ESP32 board listed.
 
