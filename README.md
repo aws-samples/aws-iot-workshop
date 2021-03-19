@@ -42,7 +42,7 @@ Choose your destiny and click the relevant OS you're running to begin installati
 
 ### Step 1:
 
-Download the Arduino IDE software package from https://www.arduino.cc/en/Main/software. Make sure to download version higher than 1.8.10 which contains MacOS (Catalina) code fix.
+Download the latest MacOS version from https://www.arduino.cc/en/software
 
 ### Step 2:
 Unzip arduino-*-macosx.zip which will extract a file called Arduino.app. 
@@ -221,7 +221,7 @@ You're now ready to start using your ESP32 device!
 
 ### Step 1:
 
-Download and install Arduino from https://www.arduino.cc/download_handler.php?f=/arduino-1.8.5-windows.exe  
+Download and install the latest Windows version from https://www.arduino.cc/en/software
 
 Once installation is complete, start the IDE.
 
