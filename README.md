@@ -44,10 +44,10 @@ Choose your destiny and click the relevant OS you're running to begin installati
 
 ### Step 1:
 
-Download the software package from https://www.arduino.cc/download_handler.php?f=/arduino-1.8.5-macosx.zip
+Download the Arduino IDE software package from https://www.arduino.cc/en/Main/software. Make sure to download version higher than 1.8.10 which contains MacOS (Catalina) code fix.
 
 ### Step 2:
-Unzip arduino-1.8.5-macosx.zip which will extract a file called Arduino.app. 
+Unzip arduino-*-macosx.zip which will extract a file called Arduino.app. 
 
 <p align="center"> 
 <img src="images/ar_zip.png" width="13%">
