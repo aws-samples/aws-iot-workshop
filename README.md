@@ -25,7 +25,7 @@ Hey there inquisitive mind! I heard you're interested in the wondrous Internet o
 ## Workshop Architecture
 
 <p align="center"> 
-<img src="images/arch.png" width="80%">
+<img src="images/WorkshopMainImage.png" width="80%">
 
 </p>
 
@@ -384,7 +384,7 @@ You're now ready to start using your ESP32 device!
 ### Architecture for this lab
 
 <p align="center"> 
-<img src="images/arch1.png" width="80%">
+<img src="images/Lab1.png" width="80%">
 </p>
 
 In this lab we're gonna start small and get that fancy pants built-in blue LED to turn on and off every 5 seconds. Kinda like the blinker in your car except you'll actually use it!  
@@ -583,7 +583,7 @@ You've now completed your first Arduino Sketch. Feel free to change the timing t
 ### Architecture for this lab
 
 <p align="center"> 
-<img src="images/arch2.png" width="80%">
+<img src="images/Lab2.png" width="80%">
 </p>
 
 In this lab, we're gonna connect our ESP32 device to the AWS IoT Core as a "thing" and then update it's thing shadow.
@@ -999,7 +999,7 @@ Back in Arduino, navigate to **"Tools -> Serial Monitor"** and you'll see the ou
 ### Architecture for this lab
 
 <p align="center"> 
-<img src="images/arch4.png" width="80%">
+<img src="images/WorkshopMainImage.png" width="80%">
 </p>
 
 In this lab,  we're gonna simulate temperature fluctuations on our ESP32 (by pressing the on-board button). An email will be sent out if the temperature is below 25 Celsius. However, if the temperature exceeds 25 Celsius then an SMS warning will be sent out instead.
