@@ -1444,7 +1444,7 @@ And the SMS:
 
 ### What did we learn?
 
-- How to create an SNS topics for SMS and email delivery
+- How to create an SNS topic for SMS and email delivery
 - How to create a subscriber for your SNS topic
 - How to create a Lambda function
 - How to create an IoT Rule and Action
